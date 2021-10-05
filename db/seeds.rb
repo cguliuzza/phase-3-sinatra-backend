@@ -14,10 +14,10 @@ user3 = User.create(name: "Gabe")
 user4 = User.create(name: "Francisco")
 
 puts "Creating games..."
-game1 = Game.create(game_title: "New World", price: 39.99, game_studio: "Amazon Game Studios", genre:"MMO, RPG", description: "Gabe likes this")
-game2 = Game.create(game_title: "Slay the Spire", price: 20.00, game_studio: "Mega Crit Games", genre:"Roguelike, Deck-building game, Strategy video game", description: "Gabe likes this")
-game3 = Game.create(game_title: "Stardew Valley", price: 5, game_studio: "Eric Barone", genre: "Simulation, Casual, Role-Playing, Indie", description: "Tina likes this")
-game4 = Game.create(game_title: "God of War", price: 50, game_studio: "Santa Monica Studios", genre: "Hack and slash, Action-Adventure", description: "Francisco likes this")
+game1 = Game.create(game_title: "New World", price: 39.99, game_developer: "Amazon Game Studios", genre:"MMO, RPG", description: "Gabe likes this")
+game2 = Game.create(game_title: "Slay the Spire", price: 20.00, game_developer: "Mega Crit Games", genre:"Roguelike, Deck-building game, Strategy video game", description: "Gabe likes this")
+game3 = Game.create(game_title: "Stardew Valley", price: 5, game_developer: "Eric Barone", genre: "Simulation, Casual, Role-Playing, Indie", description: "Tina likes this")
+game4 = Game.create(game_title: "God of War", price: 50, game_developer: "Santa Monica Studios", genre: "Hack and slash, Action-Adventure", description: "Francisco likes this")
 
 # t.integer :game_id
 # t.integer :user_id
