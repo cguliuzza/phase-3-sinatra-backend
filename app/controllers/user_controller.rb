@@ -12,7 +12,10 @@ class UserController < ApplicationController
     post '/users' do 
         user = User.create(
             name: params[:name],
-            game_id: params[:game_id]
+            gamer_tag: params[:gamer_tag],
+            bio: params[:bio],
+            creation_date: params[:creation_date],
+            image_url: params[:image_url]
         )
         user.to_json
     end 
