@@ -8,10 +8,10 @@ User.destroy_all
 GameLibrary.destroy_all
 
 puts "Creating users..."
-user1 = User.create(name: "Tina")
-user2 = User.create(name: "Gabriel Miranda")
-user3 = User.create(name: "Gabe")
-user4 = User.create(name: "Francisco")
+user1 = User.create(name: "Tina", gamer_tag: "DatzBananaz", email: "tina.com", password: "tina")
+user2 = User.create(name: "Gabriel Miranda", gamer_tag: "itsgabeover", email: "gabriel.com", password: "gabriel")
+user3 = User.create(name: "Gabe", gamer_tag: "Stridernative", email: "gabe.com", password: "gabe")
+user4 = User.create(name: "Francisco", gamer_tag: "FrancisPlays", email: "francisco.com", password: "francisco")
 
 puts "Creating games..."
 game1 = Game.create(game_title: "New World", price: 39.99, game_developer: "Amazon Game Studios", genre:"MMO, RPG", description: "Gabe likes this")
