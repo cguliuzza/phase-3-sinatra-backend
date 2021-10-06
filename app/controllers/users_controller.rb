@@ -5,9 +5,13 @@ class UsersController < ApplicationController
     end 
 
     get '/users/:id' do
+        binding.pry
         find_user
         user.to_json
     end
+
+
+    
 
     post '/users' do 
         user = User.create(
