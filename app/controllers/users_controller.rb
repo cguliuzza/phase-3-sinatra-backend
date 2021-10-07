@@ -10,17 +10,18 @@ class UsersController < ApplicationController
         user.to_json
     end
 
-
-    
-
     post '/users' do 
-        user = User.create(
-            name: params[:name],
-            gamer_tag: params[:gamer_tag],
-            bio: params[:bio],
-            creation_date: params[:creation_date],
-            image_url: params[:image_url]
-        )
+        binding.pry
+        # user = User.create(
+        #     name: params[:name],
+        #     gamer_tag: params[:gamer_tag],
+        #     bio: params[:bio],
+        #     creation_date: params[:creation_date],
+        #     image_url: params[:image_url]
+        #     email: params[:email]
+        #     password: params[:password]
+        # )
+        user = User.create(params)
         user.to_json
     end 
 

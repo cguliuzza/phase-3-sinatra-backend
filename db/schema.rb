@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_05_185712) do
+ActiveRecord::Schema.define(version: 2021_10_06_212725) do
 
   create_table "game_libraries", force: :cascade do |t|
     t.integer "user_id"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2021_10_05_185712) do
     t.string "bio"
     t.date "creation_date"
     t.string "image_url"
+    t.string "email"
+    t.string "password"
   end
 
 end
