@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     end 
 
     patch'/users/:id' do
-        find_user
+        user = User.find(params[:id])
         user.update(params)
         user.to_json
     end
