@@ -5,13 +5,11 @@ class UsersController < ApplicationController
     end 
 
     get '/users/:id' do
-        binding.pry
         find_user
         user.to_json
     end
 
     post '/users' do 
-        binding.pry
         # user = User.create(
         #     name: params[:name],
         #     gamer_tag: params[:gamer_tag],
