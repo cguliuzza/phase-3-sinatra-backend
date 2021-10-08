@@ -5,8 +5,9 @@ class GamesController < ApplicationController
     end 
 
     get '/games/:id' do
-        find_game
-        game.to_json
+        user = User.find(params[:id])
+        games = user.games
+        games.to_json
     end
 
     post '/games' do 
@@ -34,6 +35,10 @@ class GamesController < ApplicationController
 private
 
     def find_game
+        game = Game.find(params[:id])
+    end
+
+    def find_user_games
         game = Game.find(params[:id])
     end
 
